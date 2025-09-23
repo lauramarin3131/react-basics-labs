@@ -43,3 +43,7 @@ div {
   color:white;
   margin-top: 5px;
 }
+.priority {
+  font-weight: bold;
+  margin-top: 5px;
+}
