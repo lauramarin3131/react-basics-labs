@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import AddTaskForm from './components/Form';
 import { v4 as uuidv4 } from 'uuid';
 
-
 function App() {
   const [ taskState, setTaskState ] = useState({
     tasks: [
@@ -13,11 +12,13 @@ function App() {
       { id: 3, title: "Tidy up", deadline: "Today", priority: "High",done: false  }
     ]
   });
-  const [ formState, setFormState ] = useState({
+  const [formState, setFormState] = useState({
     title: "",
     description: "",
-    deadline: ""
+    deadline: "",
+    priority: "Low" 
   });
+
   const doneHandler = (taskIndex) => {
     const tasks = [...taskState.tasks];
     tasks[taskIndex].done = !tasks[taskIndex].done;
@@ -42,6 +43,10 @@ function App() {
       case "deadline":
           form.deadline = event.target.value;
           break;
+      case "priority":
+          form.priority = event.target.value;
+          break;
+
       default:
           form = formState;
     }

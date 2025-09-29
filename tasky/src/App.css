@@ -24,7 +24,7 @@ div {
   display: inline-block;
   vertical-align: top;
   font-family: system-ui;
-  background: #5bb4c4;
+  background: #5bb4c4; 
   color: white;
   text-align: center;
   width: 180px;
@@ -33,6 +33,16 @@ div {
   padding: 10px;
   position: relative;
 }
+
+
+.priorityStrip {
+  font-weight: bold;
+  color: white;
+  padding: 6px 0;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
 
 .title {
   font-weight: bold;
